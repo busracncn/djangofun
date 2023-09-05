@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('first_name', models.CharField(max_length=100)),
                 ('last_name', models.CharField(max_length=100)),
                 ('is_headmaster', models.BooleanField(default=False)),
-                ('profession', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='course.profession')),
+                ('profession', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='hogwarts.profession')),
             ],
         ),
         migrations.CreateModel(
@@ -42,8 +42,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
-                ('head', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='course.professor')),
-                ('students', models.ManyToManyField(to='course.student')),
+                ('head', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='hogwarts.professor')),
+                ('students', models.ManyToManyField(to='hogwarts.student')),
             ],
         ),
     ]
