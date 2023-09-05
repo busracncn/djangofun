@@ -22,6 +22,6 @@ class ProfessorAdmin(admin.ModelAdmin):
 
 
 @admin.register(House)
-class CourseAdmin(admin.ModelAdmin):
+class Housedmin(admin.ModelAdmin):
     list_display =  ['id', 'name', 'head']
 
