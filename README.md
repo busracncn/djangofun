@@ -1,5 +1,4 @@
 # djangofun
 
 
-https://github.com/busracncn/djangofun/assets/48771071/bfe967a8-112a-4640-8d36-7768f1f21667
-
+![django-hogwarts-1](https://github.com/busracncn/djangofun/assets/48771071/e9d10cc3-2c6b-4680-b808-30b35276af16)
