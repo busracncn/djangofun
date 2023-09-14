@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STATIC FILES -->
+    <link rel="icon" type="image/png" href="{% static 'image/hogwarts.png' %}"/>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="{% static 'css/house_base.css' %}">
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" language="Javascript" src="{% static 'js/main.js' %}"></script> 
+    <!-- TITLE -->
+    <title>{% block title %}Hogwarts{% endblock %}</title>
+    <!-- EXTRAHEAD -->
+    {% block extrahead %}{% endblock %}
+</head>
+<body>
+    <div id="main-sidenav" class="sidenav" onmouseleave="closeSideNav()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        <img src="{% static 'image/hogwarts-word.png' %}" id="hogwarts-word">
+        <a href="#">Announcements</a>
+        <a href="#">Classes</a>
+    </div>
+    <div onmouseover="openSideNav()" class="invisibility"></div>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

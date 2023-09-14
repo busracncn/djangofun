@@ -1,0 +1,145 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .invisibility{
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 3;
+    background-color: transparent;
+    overflow-x: hidden;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #181616; 
+    overflow-x: hidden;
+    padding-top: 75px;
+    transition: 0.5s;
+  }
+
+  .sidenav a{
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    font-family: cursive;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #ffffff;
+  }
+
+  .sidenav .closebtn{
+    padding: 25px 25px 25px 200px !important;
+  }
+
+  .sidenav #hogwarts-word{
+    width: 200px;
+    margin-bottom: 100px;
+    padding: 0 10px 0 28px;
+  }
+
+  #content {
+    transition: margin-left .5s;
+  }
+
+@media (min-width: 1300px){
+    .grid{
+        display: grid;
+        position: relative;
+        width: 100%;
+        flex: auto;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.left-right-grid{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 499px);
+}
+
+
+.hogwarts-logo{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 499px) 0;
+}
+
+
+.logo-img{
+    filter: brightness(90%);
+}
+
+.logo-img:hover{
+    filter: brightness(120%);
+    transform: scale(1.05);
+}
+
+.logo-div{
+    text-align: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.gryffindor-logo{
+    background-color: #740001;
+}
+
+.hufflepuff-logo{
+    background-color: #ecb939;
+}
+
+.ravenclaw-logo{
+    background-color: #0e1a40;
+}
+
+.slytherin-logo{
+    background-color: #1a472a;
+}
+
+.hogwarts-img-parent{
+    width:100%;
+    max-height:100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.hogwarts-img{
+    padding: 70px 0 150px 0;
+    width:100%;
+    height: auto;
+    position: relative;
+}
+
+
+@media (max-width: 1300px) {
+    .hogwarts-img-parent {
+      display: none;
+    }
+
+    .hogwarts-img{
+        display: none;
+    }
+  }
+  

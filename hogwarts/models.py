@@ -29,7 +29,13 @@ class Professor(models.Model):
 
 
 class House(models.Model):
-    name = models.CharField(max_length=100)
+    HOUSES = (
+        ("GRYFFINDOR", "GRYFFINDOR"),
+        ("SLYTHERIN", "SLYTHERIN"),
+        ("HUFFLEPUFF", "HUFFLEPUFF"),
+        ("RAVENCLAW", "RAVENCLAW"),
+    )
+    name = models.CharField(max_length=100, choices=HOUSES)
     students = models.ManyToManyField(Student)
     head = models.ForeignKey(Professor, on_delete=models.CASCADE)
 

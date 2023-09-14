@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="grid container">
+    <div class="grid left-right-grid">
+        <div class="gryffindor-logo logo-div">
+            <a href="{% url 'gryffindor' %}"><img src="{% static 'image/gryffindor.png' %}" class="logo-img"></a>
+        </div>
+        <div class="hufflepuff-logo logo-div">
+            <a href="{% url 'hufflepuff' %}"><img src="{% static 'image/hufflepuff.png' %}" class="logo-img"></a>
+        </div>
+    </div>
+    <div class="grid hogwarts-logo">
+        <div class="gryffindor-logo logo-div"></div>
+        <div class="slytherin-logo logo-div"></div>
+        <div class="hufflepuff-logo logo-div"></div>
+        <div class="ravenclaw-logo logo-div"></div>
+        <div class="hogwarts-img-parent">
+            <img src="{% static 'image/hogwarts.png' %}" class="hogwarts-img logo-img">
+        </div>
+    </div>
+    <div class="grid left-right-grid">
+        <div class="slytherin-logo logo-div">
+            <a href="{% url 'slytherin' %}"><img src="{% static 'image/slytherin.png' %}" class="logo-img"></a>
+        </div>
+        <div class="ravenclaw-logo logo-div">
+            <a href="{% url 'ravenclaw' %}"><img src="{% static 'image/ravenclaw.png' %}" class="logo-img"></a>
+        </div>
+    </div>
+</div>
+{% endblock %}
