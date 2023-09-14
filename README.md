@@ -9,3 +9,6 @@
 
 ![django-hogwarts-2](https://github.com/busracncn/djangofun/assets/48771071/936a8cdb-82e5-4bc4-9d6e-a85550fdf948)
 
+
+# Page Link
+![djangofun-hogwarts-3](https://github.com/busracncn/djangofun/assets/48771071/05b33e2a-9d43-44e7-8e7d-d04b1be80779)
